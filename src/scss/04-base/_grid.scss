@@ -1,0 +1,119 @@
+$gridCols: 12;
+
+.Grid {
+  --gridGutter: 20px;
+
+  @include respondTo(xs) {
+    --gridGutter: 10px;
+  }
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: calc(var(--gridGutter) * -1);
+  margin-right: calc(var(--gridGutter) * -1);
+
+  &--noGutters {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    .Grid-col {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  &--md-noGutters {
+    @include respondTo(md) {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .Grid-col {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  &--sm-noGutters {
+    @include respondTo(sm) {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .Grid-col {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  &--xs-noGutters {
+    @include respondTo(xs) {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .Grid-col {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  &-col {
+    padding-left: var(--gridGutter);
+    padding-right: var(--gridGutter);
+  }
+
+  @for $i from 1 through $gridCols {
+    .Grid-col--#{$i} {
+      flex: 0 0 math.percentage(math.div($i, $gridCols));
+      max-width: math.percentage(math.div($i, $gridCols));
+    }
+  }
+
+  @include respondTo(lg) {
+    @for $i from 1 through $gridCols {
+      .Grid-col--lg-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $gridCols));
+        max-width: math.percentage(math.div($i, $gridCols));
+      }
+    }
+  }
+
+  @include respondTo(md) {
+    @for $i from 1 through $gridCols {
+      .Grid-col--md-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $gridCols));
+        max-width: math.percentage(math.div($i, $gridCols));
+      }
+    }
+  }
+
+  @include respondTo(sm) {
+    @for $i from 1 through $gridCols {
+      .Grid-col--sm-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $gridCols));
+        max-width: math.percentage(math.div($i, $gridCols));
+      }
+    }
+  }
+
+  @include respondTo(xs) {
+    @for $i from 1 through $gridCols {
+      .Grid-col--xs-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $gridCols));
+        max-width: math.percentage(math.div($i, $gridCols));
+      }
+    }
+  }
+
+  @include respondTo(xxs) {
+    @for $i from 1 through $gridCols {
+      .Grid-col--xxs-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $gridCols));
+        max-width: math.percentage(math.div($i, $gridCols));
+      }
+    }
+  }
+}

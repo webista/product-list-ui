@@ -1,0 +1,16 @@
+.Alert {
+  position: relative;
+  @include text($colorPrimary, $fontSizeNormal, $fontWeightSemiBold, 1.5);
+  text-align: center;
+  border-radius: 48px 48px 48px 0;
+  padding: 1rem 1.5rem;
+
+  &--info {
+    background-color: #ffe55a;
+  }
+
+  &--error {
+    color: $colorSecondary;
+    background-color: #f25050;
+  }
+}

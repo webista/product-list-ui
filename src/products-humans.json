@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "FeelGood H+",
+    "desc": "Reiciendis illum rem esse doloremque! Culpa sint rerum modi odit.",
+    "rating": 5,
+    "reviews": 20,
+    "price": "$19.90",
+    "img": ["./img/product-human.png", "./img/product-human@2x.png"]
+  },
+  {
+    "id": 2,
+    "name": "Product Name",
+    "desc": "Hic unde omnis vel rem nihil, amet quidem aperiam! Assumenda necessitatibus ipsa eum voluptatum ut.",
+    "rating": 3,
+    "reviews": 1,
+    "price": "$69.90",
+    "img": ["./img/product-human.png", "./img/product-human@2x.png"]
+  },
+  {
+    "id": 3,
+    "name": "Long Product Name",
+    "desc": "Consequuntur reprehenderit sequi quae doloribus aliquid animi ipsam voluptate illum vitae repellendus.",
+    "rating": 4.5,
+    "reviews": 5,
+    "price": "$29.90",
+    "img": ["./img/product-human.png", "./img/product-human@2x.png"]
+  },
+  {
+    "id": 4,
+    "name": "Extra Long Product Name",
+    "desc": "Illum laborum, eligendi perspiciatis aperiam rerum sapiente vel.",
+    "rating": 5,
+    "reviews": 13,
+    "price": "$9.90",
+    "img": ["./img/product-human.png", "./img/product-human@2x.png"]
+  }
+]

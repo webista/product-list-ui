@@ -1,0 +1,367 @@
+// Margin and padding classes
+.u-mt-primary {
+  margin-top: 1.5rem;
+
+  @include respondFrom(sm) {
+    margin-top: 2.5rem;
+  }
+}
+
+.u-mb-primary {
+  margin-bottom: 1.5rem;
+
+  @include respondFrom(sm) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.u-ml-primary {
+  margin-left: 1.5rem;
+
+  @include respondFrom(sm) {
+    margin-left: 2.5rem;
+  }
+}
+
+.u-mr-primary {
+  margin-right: 1.5rem;
+
+  @include respondFrom(sm) {
+    margin-right: 2.5rem;
+  }
+}
+
+.u-mt-secondary {
+  margin-top: 2.5rem;
+
+  @include respondFrom(sm) {
+    margin-top: 5rem;
+  }
+}
+
+.u-py-secondary {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  @include respondFrom(sm) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@each $space in $spacings {
+  .u-mt-#{$space} {
+    margin-top: #{math.div($space, 16)}rem;
+  }
+  .u-mb-#{$space} {
+    margin-bottom: #{math.div($space, 16)}rem;
+  }
+  .u-ml-#{$space} {
+    margin-left: #{math.div($space, 16)}rem;
+  }
+  .u-mr-#{$space} {
+    margin-right: #{math.div($space, 16)}rem;
+  }
+  .u-mx-#{$space} {
+    margin-left: #{math.div($space, 16)}rem;
+    margin-right: #{math.div($space, 16)}rem;
+  }
+  .u-my-#{$space} {
+    margin-top: #{math.div($space, 16)}rem;
+    margin-bottom: #{math.div($space, 16)}rem;
+  }
+  .u-m-#{$space} {
+    margin: #{math.div($space, 16)}rem;
+  }
+}
+
+@include respondTo(lg) {
+  @each $space in $spacings {
+    .u-lg-mt-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+    }
+    .u-lg-mb-#{$space} {
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-lg-ml-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+    }
+    .u-lg-mr-#{$space} {
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-lg-mx-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-lg-my-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-lg-m-#{$space} {
+      margin: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $space in $spacings {
+    .u-md-mt-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+    }
+    .u-md-mb-#{$space} {
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-md-ml-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+    }
+    .u-md-mr-#{$space} {
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-md-mx-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-md-my-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-md-m-#{$space} {
+      margin: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $space in $spacings {
+    .u-sm-mt-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+    }
+    .u-sm-mb-#{$space} {
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-sm-ml-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+    }
+    .u-sm-mr-#{$space} {
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-sm-mx-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-sm-my-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-sm-m-#{$space} {
+      margin: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $space in $spacings {
+    .u-xs-mt-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+    }
+    .u-xs-mb-#{$space} {
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xs-ml-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+    }
+    .u-xs-mr-#{$space} {
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-xs-mx-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-xs-my-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xs-m-#{$space} {
+      margin: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(xxs) {
+  @each $space in $spacings {
+    .u-xxs-mt-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-mb-#{$space} {
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-ml-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-mr-#{$space} {
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-mx-#{$space} {
+      margin-left: #{math.div($space, 16)}rem;
+      margin-right: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-my-#{$space} {
+      margin-top: #{math.div($space, 16)}rem;
+      margin-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-m-#{$space} {
+      margin: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@each $space in $spacings {
+  .u-pt-#{$space} {
+    padding-top: #{math.div($space, 16)}rem;
+  }
+  .u-pb-#{$space} {
+    padding-bottom: #{math.div($space, 16)}rem;
+  }
+  .u-pl-#{$space} {
+    padding-left: #{math.div($space, 16)}rem;
+  }
+  .u-pr-#{$space} {
+    padding-right: #{math.div($space, 16)}rem;
+  }
+  .u-px-#{$space} {
+    padding-left: #{math.div($space, 16)}rem;
+    padding-right: #{math.div($space, 16)}rem;
+  }
+  .u-py-#{$space} {
+    padding-top: #{math.div($space, 16)}rem;
+    padding-bottom: #{math.div($space, 16)}rem;
+  }
+  .u-p-#{$space} {
+    padding: #{math.div($space, 16)}rem;
+  }
+}
+
+@include respondTo(md) {
+  @each $space in $spacings {
+    .u-md-pt-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+    }
+    .u-md-pb-#{$space} {
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-md-pl-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+    }
+    .u-md-pr-#{$space} {
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-md-px-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-md-py-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-md-p-#{$space} {
+      padding: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $space in $spacings {
+    .u-sm-pt-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+    }
+    .u-sm-pb-#{$space} {
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-sm-pl-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+    }
+    .u-sm-pr-#{$space} {
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-sm-px-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-sm-py-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-sm-p-#{$space} {
+      padding: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $space in $spacings {
+    .u-xs-pt-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+    }
+    .u-xs-pb-#{$space} {
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xs-pl-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+    }
+    .u-xs-pr-#{$space} {
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-xs-px-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-xs-py-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xs-p-#{$space} {
+      padding: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(xxs) {
+  @each $space in $spacings {
+    .u-xxs-pt-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-pb-#{$space} {
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-pl-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-pr-#{$space} {
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-px-#{$space} {
+      padding-left: #{math.div($space, 16)}rem;
+      padding-right: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-py-#{$space} {
+      padding-top: #{math.div($space, 16)}rem;
+      padding-bottom: #{math.div($space, 16)}rem;
+    }
+    .u-xxs-p-#{$space} {
+      padding: #{math.div($space, 16)}rem;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.Tabs {
+  display: inline-flex;
+  border-radius: 12px;
+  box-shadow: inset 1px 1px rgba(21, 21, 21, 0.2), inset -1px -1px rgba(21, 21, 21, 0.2);
+
+  &-button {
+    display: inline-block;
+    position: relative;
+    @include text($colorPrimary, $fontSizeNormal, $fontWeightMedium, 1.25);
+    text-decoration: none;
+    text-align: center;
+    background: transparent;
+    border-radius: 12px;
+    padding: 0.625rem 2.5rem;
+    overflow: hidden;
+    transition: color 0.25s linear, transform 0.25s ease-in-out;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(90deg, rgba(248, 148, 70, 1) 0%, rgba(245, 183, 48, 1) 100%);
+      z-index: -1;
+      transition: opacity 0.25s linear;
+      opacity: 0;
+    }
+
+    &:focus,
+    &:hover,
+    &.is-active {
+      color: $colorSecondary;
+      filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.07));
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}

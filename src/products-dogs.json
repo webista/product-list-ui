@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "GutSense",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "rating": 4,
+    "reviews": 10,
+    "price": "$49.90",
+    "img": ["./img/product-dog.png", "./img/product-dog@2x.png"]
+  },
+  {
+    "id": 2,
+    "name": "Product Name",
+    "desc": "Tempore, ex. Atque sit ad ipsam corrupti. Soluta corrupti perferendis magnam.",
+    "rating": 4.8,
+    "reviews": 13,
+    "price": "$39.90",
+    "img": ["./img/product-dog.png", "./img/product-dog@2x.png"]
+  },
+  {
+    "id": 3,
+    "name": "Long Product Name",
+    "desc": "Veritatis voluptas neque perspiciatis illo ducimus officiis impedit voluptates. Ullam reiciendis voluptatem quaerat.",
+    "rating": 3.5,
+    "reviews": 5,
+    "price": "$19.90",
+    "img": ["./img/product-dog.png", "./img/product-dog@2x.png"]
+  },
+  {
+    "id": 4,
+    "name": "Extra Long Product Name",
+    "desc": "Esse, enim molestiae quo architecto quasi rerum error perferendis cupiditate, ratione ea quis veniam aliquam.",
+    "rating": 5,
+    "reviews": 1,
+    "price": "$199.90",
+    "img": ["./img/product-dog.png", "./img/product-dog@2x.png"]
+  }
+]

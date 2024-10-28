@@ -1,0 +1,17 @@
+@each $key, $val in $colors {
+  .u-c-#{$key} {
+    color: $val !important;
+  }
+
+  .u-bgc-#{$key} {
+    background-color: $val !important;
+  }
+
+  .u-fill-#{$key} {
+    fill: $val !important;
+  }
+
+  .u-stroke-#{$key} {
+    stroke: $val !important;
+  }
+}

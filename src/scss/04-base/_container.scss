@@ -1,0 +1,13 @@
+.Container {
+  width: 100%;
+  max-width: rem(1440px) + 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respondTo(xs) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

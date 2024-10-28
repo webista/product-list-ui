@@ -1,0 +1,128 @@
+$productCardSpacing: 1rem;
+
+.ProductCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: $productCardSpacing;
+  border-radius: 20px;
+  background: $colorSecondary;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease-in-out;
+  animation: fadeIn 0.25s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &-topSection {
+    display: flex;
+    flex-direction: column;
+    gap: $productCardSpacing;
+  }
+
+  &-bottomSection {
+    display: flex;
+    flex-direction: column;
+    gap: $productCardSpacing;
+    padding: 0 $productCardSpacing $productCardSpacing $productCardSpacing;
+  }
+
+  &-imgContainer {
+    background: radial-gradient(111.16% 135.41% at 117.2% 102.58%, #fffbf2 0%, #f8f3e9 0.01%, #fff 100%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+    padding: rem(10px);
+  }
+
+  &-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-family: $fontFamilyPrimary;
+    @include text($colorPrimary, $fontSizeBig, $fontWeightBold, 1.17);
+    padding: 0 $productCardSpacing;
+
+    @include respondFrom(sm) {
+      font-size: $fontSizeExtraBig;
+    }
+
+    @include respondFrom(md) {
+      font-size: $fontSizeHuge;
+    }
+  }
+
+  &-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    @include text($colorPrimary, $fontSizeSmall, $fontWeightMedium, 1.33);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 20px rgba(0, 0, 0, 0.07);
+    padding: 0 $productCardSpacing;
+    overflow: hidden;
+
+    @include respondFrom(sm) {
+      font-size: $fontSizeNormal;
+    }
+
+    @include respondFrom(md) {
+      font-size: $fontSizeBig;
+    }
+  }
+
+  &-ratingSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $productCardSpacing;
+  }
+
+  &-rating {
+    position: relative;
+    width: rem(174px);
+    height: rem(30px);
+  }
+
+  &-ratingStars {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/rating.svg);
+    background-repeat: no-repeat;
+  }
+
+  &-ratingValue {
+    @include text($colorPrimary, $fontSizeNormal, $fontWeightMedium, 1.5);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07), 0px 0px 20px rgba(0, 0, 0, 0.07);
+  }
+
+  &-reviews {
+    position: relative;
+    align-self: flex-start;
+    @include text($colorTertiary, $fontSizeNormal, $fontWeightBold, 1.5);
+    z-index: 2;
+  }
+
+  &-price {
+    @include text($colorPrimary, $fontSizeExtraBig, $fontWeightBold, 1.17);
+
+    @include respondFrom(md) {
+      font-size: $fontSizeHuge;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

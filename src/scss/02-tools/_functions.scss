@@ -1,0 +1,24 @@
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+@function rem($size) {
+  $size: if(unitless($size), $size * 1px, $size);
+  $remSize: math.div($size, 16px) * 1rem;
+
+  @return $remSize;
+}
+
+@function z($key) {
+  @if map-has-key($z-indexes, $key) {
+    @return map-get($z-indexes, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $z-indexes.";
+  @return null;
+}

@@ -1,0 +1,96 @@
+html {
+  font-family: $fontFamilyPrimary;
+  @include text($colorText, 100%, $fontWeightNormal, normal);
+}
+
+h1,
+.H1,
+h2,
+.H2,
+h3,
+.H3,
+h4,
+.H4,
+h5,
+.H5,
+h6,
+.H6 {
+  font-family: $fontFamilySecondary;
+}
+
+h1,
+.H1 {
+  @include text($colorHeading, 2rem, $fontWeightExtraBold, normal);
+
+  @include respondFrom(sm) {
+    font-size: 2.25rem;
+  }
+
+  @include respondFrom(md) {
+    font-size: 2.5rem;
+  }
+}
+
+p,
+.Text {
+  @include text($colorText, $fontSizeNormal, $fontWeightNormal, inherit);
+}
+
+a {
+  @include text(inherit, inherit, inherit, inherit);
+  text-decoration: underline;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  transition: color 0.25s linear, outline-offset 0.25s linear;
+
+  &:focus {
+    outline-color: currentColor;
+    outline-offset: 2px;
+  }
+}
+
+.Link {
+  @include text($colorPrimary, inherit, inherit, inherit);
+  text-decoration: underline;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  transition: color 0.25s linear, outline-offset 0.25s linear;
+
+  &:focus {
+    outline-color: currentColor;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: darken($colorPrimary, 5%);
+  }
+
+  &--inverted {
+    text-decoration: none;
+    text-decoration-color: transparent;
+    transition: color 0.25s linear, outline-offset 0.25s linear, text-decoration-color 0.25s linear;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+    }
+  }
+
+  &--stretched {
+    white-space: normal;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      pointer-events: auto;
+    }
+  }
+}

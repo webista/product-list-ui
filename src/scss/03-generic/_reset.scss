@@ -1,0 +1,186 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  // scroll-padding-top: 2.5rem;
+  -webkit-tap-highlight-color: transparent;
+
+  &.Preload *,
+  &.Preload *::before,
+  &.Preload *::after {
+    transition: none !important;
+  }
+}
+
+.NotAnimOnLoad,
+.NotAnimOnLoad * {
+  animation-duration: 0s !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section,
+summary,
+details,
+hgroup,
+figure,
+figcaption,
+small {
+  display: block;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  clear: none;
+}
+
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    background-image: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+input {
+  border: none;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}

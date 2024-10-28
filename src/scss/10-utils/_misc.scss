@@ -1,0 +1,188 @@
+// Center block class
+.u-center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Cursor classes
+.u-cursor-notAllowed {
+  cursor: not-allowed;
+}
+
+// Height classes
+.u-height-auto {
+  height: auto;
+}
+
+.u-height-100p {
+  height: 100%;
+}
+
+.u-md-height-100p {
+  @include respondTo(md) {
+    height: 100%;
+  }
+}
+
+.u-sm-height-100p {
+  @include respondTo(sm) {
+    height: 100%;
+  }
+}
+
+.u-xs-height-100p {
+  @include respondTo(xs) {
+    height: 100%;
+  }
+}
+
+// Content img class
+.u-content-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Img responsive class
+.u-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Overflow classes
+.u-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.u-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.u-overflow-auto {
+  overflow: auto;
+}
+
+.u-overflow-visible {
+  overflow: visible;
+}
+
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+// Position classes
+$position: absolute, relative, static;
+
+@each $val in $position {
+  .u-position-#{$val} {
+    position: $val;
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $position {
+    .u-sm-position-#{$val} {
+      position: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $position {
+    .u-xs-position-#{$val} {
+      position: $val;
+    }
+  }
+}
+
+// Screen reader only class
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+// Width classes
+$widths: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+
+@each $val in $widths {
+  .u-width-#{$val}p {
+    width: math.percentage(math.div($val, 100));
+  }
+}
+
+.u-width-auto {
+  width: auto;
+}
+
+@include respondTo(lg) {
+  @each $val in $widths {
+    .u-lg-width-#{$val}p {
+      width: math.percentage(math.div($val, 100));
+    }
+  }
+
+  .u-lg-width-auto {
+    width: auto;
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $widths {
+    .u-md-width-#{$val}p {
+      width: math.percentage(math.div($val, 100));
+    }
+  }
+
+  .u-md-width-auto {
+    width: auto;
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $widths {
+    .u-sm-width-#{$val}p {
+      width: math.percentage(math.div($val, 100));
+    }
+  }
+
+  .u-sm-width-auto {
+    width: auto;
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $widths {
+    .u-xs-width-#{$val}p {
+      width: math.percentage(math.div($val, 100));
+    }
+  }
+
+  .u-xs-width-auto {
+    width: auto;
+  }
+}
+
+// White space classes
+.u-ws-normal {
+  white-space: normal;
+}
+
+.u-ws-nowrap {
+  white-space: nowrap;
+}
+
+// Z-index classes
+$z-indexes: 0, 1, 2, 3, 4, 5;
+
+@each $val in $z-indexes {
+  .u-z-index-#{$val} {
+    z-index: $val;
+  }
+}

@@ -1,0 +1,61 @@
+$breakpoints-max: (
+  "xxxs": 320px,
+  "xxs": 414px,
+  "xs": 576px,
+  "sm": 800px,
+  "md": 1024px,
+  "lg": 1366px,
+  "xl": 1920px
+);
+
+$breakpoints-min: (
+  "xxs": 321px,
+  "xs": 415px,
+  "sm": 577px,
+  "md": 801px,
+  "lg": 1025px,
+  "xl": 1367px
+);
+
+$colors: (
+  "primary": $colorPrimary,
+  "secondary": $colorSecondary,
+  "tertiary": $colorTertiary
+);
+
+$fontSizes: (
+  "tiny": $fontSizeTiny,
+  "extraSmall": $fontSizeExtraSmall,
+  "small": $fontSizeSmall,
+  "normal": $fontSizeNormal,
+  "big": $fontSizeBig,
+  "extraBig": $fontSizeExtraBig,
+  "huge": $fontSizeHuge
+);
+
+$fontWeights: (
+  "thin": $fontWeightThin,
+  "extraLight": $fontWeightExtraLight,
+  "light": $fontWeightLight,
+  "normal": $fontWeightNormal,
+  "medium": $fontWeightMedium,
+  "semiBold": $fontWeightSemiBold,
+  "bold": $fontWeightBold,
+  "extraBold": $fontWeightExtraBold,
+  "heavy": $fontWeightHeavy
+);
+
+$spacings: (0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 80);
+
+$z-indexes: (
+  "default": 1,
+  "badge": 5,
+  "tooltip": 10,
+  "overlay": 100,
+  "subMenu": 200,
+  "popup": 999,
+  "modal": 9999,
+  "alert": 99999,
+  "flashMessage": 99999,
+  "loader": 99999
+);

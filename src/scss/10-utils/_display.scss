@@ -1,0 +1,525 @@
+// Display classes
+$display: none, block, inline, inline-block, flex, inline-flex, grid;
+
+@each $val in $display {
+  .u-display-#{$val} {
+    display: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $display {
+    .u-lg-display-#{$val} {
+      display: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $display {
+    .u-md-display-#{$val} {
+      display: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $display {
+    .u-sm-display-#{$val} {
+      display: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $display {
+    .u-xs-display-#{$val} {
+      display: $val;
+    }
+  }
+}
+
+// Flex classes
+.u-flex-1 {
+  flex: 1;
+}
+
+// Flex basis classes
+.u-flex-basis-100p {
+  flex-basis: 100%;
+}
+
+@include respondTo(md) {
+  .u-md-flex-basis-100p {
+    flex-basis: 100%;
+  }
+}
+
+@include respondTo(sm) {
+  .u-sm-flex-basis-100p {
+    flex-basis: 100%;
+  }
+}
+
+@include respondTo(xs) {
+  .u-xs-flex-basis-100p {
+    flex-basis: 100%;
+  }
+}
+
+// Flex direction classes
+$flexDirection: row, row-reverse, column, column-reverse;
+
+@each $val in $flexDirection {
+  .u-flex-#{$val} {
+    flex-direction: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $flexDirection {
+    .u-lg-flex-#{$val} {
+      flex-direction: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $flexDirection {
+    .u-md-flex-#{$val} {
+      flex-direction: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $flexDirection {
+    .u-sm-flex-#{$val} {
+      flex-direction: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $flexDirection {
+    .u-xs-flex-#{$val} {
+      flex-direction: $val;
+    }
+  }
+}
+
+// Flex wrap classes
+$flexWrap: wrap, nowrap;
+
+@each $val in $flexWrap {
+  .u-flex-#{$val} {
+    flex-wrap: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $flexWrap {
+    .u-lg-flex-#{$val} {
+      flex-wrap: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $flexWrap {
+    .u-md-flex-#{$val} {
+      flex-wrap: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $flexWrap {
+    .u-sm-flex-#{$val} {
+      flex-wrap: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $flexWrap {
+    .u-xs-flex-#{$val} {
+      flex-wrap: $val;
+    }
+  }
+}
+
+// Flex grow classes
+$flexGrow: 0, 1;
+
+@each $val in $flexGrow {
+  .u-flex-grow-#{$val} {
+    flex-grow: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $flexGrow {
+    .u-lg-flex-grow-#{$val} {
+      flex-grow: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $flexGrow {
+    .u-md-flex-grow-#{$val} {
+      flex-grow: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $flexGrow {
+    .u-sm-flex-grow-#{$val} {
+      flex-grow: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $flexGrow {
+    .u-xs-flex-grow-#{$val} {
+      flex-grow: $val;
+    }
+  }
+}
+
+// Flex shrink classes
+$flexShrink: 0, 1;
+
+@each $val in $flexShrink {
+  .u-flex-shrink-#{$val} {
+    flex-shrink: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $flexShrink {
+    .u-lg-flex-shrink-#{$val} {
+      flex-shrink: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $flexShrink {
+    .u-md-flex-shrink-#{$val} {
+      flex-shrink: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $flexShrink {
+    .u-sm-flex-shrink-#{$val} {
+      flex-shrink: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $flexShrink {
+    .u-xs-flex-shrink-#{$val} {
+      flex-shrink: $val;
+    }
+  }
+}
+
+// Justify self classes
+$justify-self: auto, flex-start, flex-end, center, start, end;
+
+@each $val in $justify-self {
+  .u-justify-self-#{$val} {
+    justify-self: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $justify-self {
+    .u-lg-justify-self-#{$val} {
+      justify-self: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $justify-self {
+    .u-md-justify-self-#{$val} {
+      justify-self: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $justify-self {
+    .u-sm-justify-self-#{$val} {
+      justify-self: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $justify-self {
+    .u-xs-justify-self-#{$val} {
+      justify-self: $val;
+    }
+  }
+}
+
+// Justify content classes
+$justify-content: flex-start, flex-end, center, space-between, space-around;
+
+@each $val in $justify-content {
+  .u-justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $justify-content {
+    .u-lg-justify-#{$val} {
+      justify-content: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $justify-content {
+    .u-md-justify-#{$val} {
+      justify-content: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $justify-content {
+    .u-sm-justify-#{$val} {
+      justify-content: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $justify-content {
+    .u-xs-justify-#{$val} {
+      justify-content: $val;
+    }
+  }
+}
+
+// Align items classes
+$align-items: flex-start, flex-end, center, stretch;
+
+@each $val in $align-items {
+  .u-align-items-#{$val} {
+    align-items: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $align-items {
+    .u-md-align-items-#{$val} {
+      align-items: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $align-items {
+    .u-md-align-items-#{$val} {
+      align-items: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $align-items {
+    .u-sm-align-items-#{$val} {
+      align-items: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $align-items {
+    .u-xs-align-items-#{$val} {
+      align-items: $val;
+    }
+  }
+}
+
+// Align self classes
+$align-self: start, end, flex-start, flex-end, center;
+
+@each $val in $align-self {
+  .u-align-self-#{$val} {
+    align-self: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $align-self {
+    .u-md-align-self-#{$val} {
+      align-self: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $align-self {
+    .u-md-align-self-#{$val} {
+      align-self: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $align-self {
+    .u-sm-align-self-#{$val} {
+      align-self: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $align-self {
+    .u-xs-align-self-#{$val} {
+      align-self: $val;
+    }
+  }
+}
+
+// Order classes
+$order: 1, 2, 3, 4, 5;
+
+@each $val in $order {
+  .u-order-#{$val} {
+    order: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $order {
+    .u-lg-order-#{$val} {
+      order: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $order {
+    .u-md-order-#{$val} {
+      order: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $order {
+    .u-sm-order-#{$val} {
+      order: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $order {
+    .u-xs-order-#{$val} {
+      order: $val;
+    }
+  }
+}
+
+// Flex gap classes
+@each $space in $spacings {
+  .u-row-gap-#{$space} {
+    row-gap: #{math.div($space, 16)}rem;
+  }
+
+  .u-column-gap-#{$space} {
+    column-gap: #{math.div($space, 16)}rem;
+  }
+
+  .u-gap-#{$space} {
+    gap: #{math.div($space, 16)}rem;
+  }
+}
+
+@include respondTo(lg) {
+  @each $space in $spacings {
+    .u-lg-gap-#{$space} {
+      gap: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $space in $spacings {
+    .u-md-gap-#{$space} {
+      gap: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $space in $spacings {
+    .u-sm-gap-#{$space} {
+      gap: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $space in $spacings {
+    .u-xs-gap-#{$space} {
+      gap: #{math.div($space, 16)}rem;
+    }
+  }
+}
+
+// Float classes
+$float: left, right, none;
+
+@each $val in $float {
+  .u-float-#{$val} {
+    float: $val;
+  }
+}
+
+@include respondTo(lg) {
+  @each $val in $float {
+    .u-lg-float-#{$val} {
+      float: $val;
+    }
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $float {
+    .u-md-float-#{$val} {
+      float: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $float {
+    .u-sm-float-#{$val} {
+      float: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $float {
+    .u-xs-float-#{$val} {
+      float: $val;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.Products {
+  display: grid;
+  gap: 1rem;
+  max-width: rem(1160px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respondFrom(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respondFrom(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respondFrom(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

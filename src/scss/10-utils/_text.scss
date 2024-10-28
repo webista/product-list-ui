@@ -1,0 +1,93 @@
+// Font family classes
+.u-ff-primary {
+  font-family: $fontFamilyPrimary;
+}
+
+.u-ff-secondary {
+  font-family: $fontFamilySecondary;
+}
+
+// Font size classes
+@each $key, $val in $fontSizes {
+  .u-fs-#{$key} {
+    font-size: $val;
+  }
+}
+
+@include respondTo(sm) {
+  @each $key, $val in $fontSizes {
+    .u-sm-fs-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $key, $val in $fontSizes {
+    .u-xs-fs-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+
+// Font weight classes
+@each $key, $val in $fontWeights {
+  .u-fw-#{$key} {
+    font-weight: $val !important;
+  }
+}
+
+// Line height classes
+.u-lh-normal {
+  line-height: normal;
+}
+
+.u-lh-1 {
+  line-height: 1;
+}
+
+.u-lh-1_2 {
+  line-height: 1.2;
+}
+
+.u-lh-1_5 {
+  line-height: 1.5;
+}
+
+// Text align classes
+$text-aligns: left, right, center;
+
+@each $val in $text-aligns {
+  .u-ta-#{$val} {
+    text-align: $val;
+  }
+}
+
+@include respondTo(md) {
+  @each $val in $text-aligns {
+    .u-md-ta-#{$val} {
+      text-align: $val;
+    }
+  }
+}
+
+@include respondTo(sm) {
+  @each $val in $text-aligns {
+    .u-sm-ta-#{$val} {
+      text-align: $val;
+    }
+  }
+}
+
+@include respondTo(xs) {
+  @each $val in $text-aligns {
+    .u-xs-ta-#{$val} {
+      text-align: $val;
+    }
+  }
+}
+
+// Text transform classes
+.u-tt-uppercase {
+  text-transform: uppercase;
+}

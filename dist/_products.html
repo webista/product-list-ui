@@ -1,0 +1,26 @@
+<!-- Static HTML markup only for CSS build -->
+<ul class="Products">
+  <li class="ProductCard">
+    <div class="ProductCard-topSection">
+      <picture class="ProductCard-imgContainer">
+        <source srcset="./img/product-dog.png 1x, ./img/product-dog@2x.png 2x" />
+        <img class="ProductCard-img" src="./img/product-dog.png" width="274" height="274" alt="Product name" loading="lazy" />
+      </picture>
+      <h2 class="ProductCard-title">
+        <a href="#" class="Link Link--inverted Link--stretched" title="Product name">Product name</a>
+      </h2>
+      <p class="ProductCard-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt explicabo suscipit.</p>
+    </div>
+    <div class="ProductCard-bottomSection">
+      <div class="ProductCard-ratingSection">
+        <div class="ProductCard-rating">
+          <span class="ProductCard-ratingStars" style="width: 96%"></span>
+        </div>
+        <span class="ProductCard-ratingValue">4.8</span>
+      </div>
+      <a href="#" class="ProductCard-reviews" title="Show product reviews">12 reviews</a>
+      <span class="ProductCard-price">$49.90</span>
+      <button type="button" class="Button u-width-100p">Add to Cart</button>
+    </div>
+  </li>
+</ul>
