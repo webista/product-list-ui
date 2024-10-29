@@ -2,22 +2,22 @@
  * main.js
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const fetchDataButtons = document.querySelectorAll(".js-fetchData");
-  const fetchDataErrorText = "We're sorry. Products could not be loaded.";
+  const productsTabsButtons = document.querySelectorAll("#js-products-tabs .js-fetchData");
   const productsContainer = document.getElementById("js-products");
 
-  if (fetchDataButtons.length) {
+  if (productsTabsButtons.length) {
     // The first product tab is loaded immediately
-    fetchData(null, fetchDataButtons[0].href);
+    fetchData(null, productsTabsButtons[0].href);
 
     // Other product tabs are loaded on click event
-    fetchDataButtons.forEach((btn) => {
+    productsTabsButtons.forEach((btn) => {
       btn.addEventListener("click", fetchData);
     });
   }
 
   function fetchData(ev, url) {
     const loader = `<span class="Loader"></span>`;
+    const errorText = "We're sorry. Products could not be loaded.";
     let fetchButton;
     let dataURL;
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const handleError = (error) => {
       console.warn(error.message);
-      productsContainer.innerHTML = `<p class="Alert Alert--error">${fetchDataErrorText}</p>`;
+      productsContainer.innerHTML = `<p class="Alert Alert--error">${errorText}</p>`;
     };
 
     const handleData = (data) => {
