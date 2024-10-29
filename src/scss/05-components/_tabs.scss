@@ -1,7 +1,7 @@
 .Tabs {
   display: inline-flex;
   border-radius: 12px;
-  box-shadow: inset 1px 1px rgba(21, 21, 21, 0.2), inset -1px -1px rgba(21, 21, 21, 0.2);
+  border: 1px solid rgba(21, 21, 21, 0.2);
 
   &-button {
     display: inline-block;
@@ -12,9 +12,19 @@
     background: transparent;
     border-radius: 12px;
     padding: 0.625rem 2.5rem;
+    margin-top: -1px;
+    margin-bottom: -1px;
     overflow: hidden;
     transition: color 0.25s linear, transform 0.25s ease-in-out;
     z-index: 1;
+
+    &:first-child {
+      margin-left: -1px;
+    }
+
+    &:last-child {
+      margin-right: -1px;
+    }
 
     &::before {
       content: "";
