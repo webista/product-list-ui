@@ -18,15 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function fetchData(ev, url) {
     const loader = `<span class="Loader"></span>`;
     const errorText = "We're sorry. Products could not be loaded.";
-    let fetchButton;
     let dataURL;
 
     productsContainer.innerHTML = loader;
 
     if (ev) {
       ev.preventDefault();
-      fetchButton = ev.target;
-      dataURL = fetchButton.href;
+      dataURL = ev.target.href;
     } else {
       dataURL = url;
     }
