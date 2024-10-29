@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <span class="ProductCard-ratingValue">${product.rating}</span>
             </div>
-            <a href="#" class="ProductCard-reviews" title="Show product reviews">${product.reviews} ${product.reviews > 1 ? "reviews" : "review"}</a>
+            <a href="#" class="ProductCard-reviews" title="Show product ${product.reviews > 1 ? "reviews" : "review"}">${product.reviews} ${product.reviews > 1 ? "reviews" : "review"}</a>
             <span class="ProductCard-price">${product.price}</span>
             <button type="button" class="Button u-width-100p">Add to Cart</button>
           </div>
